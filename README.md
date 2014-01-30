@@ -1,7 +1,7 @@
 Description
 =============
 
-This is module for control LG over TCP/IP. This is light version - you can send only keys that listed in the end of this description. For additional features like getting channel list, apps list, executong app, text input, touchpad you can contact me by email.
+This is module for control LG over TCP/IP. This is light version - you can send only keys that listed in the end of this description. For additional features like getting channel list, apps list, executing app, text input, touchpad you can contact me by email.
 
 
 Usage
