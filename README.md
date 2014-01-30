@@ -1,4 +1,4 @@
-Descriptiom
+Description
 =============
 
 This is module for control LG over TCP/IP. This is light version - you can send only keys that listed in the end of this description. For additional features like getting channel list, apps list, executong app, text input, touchpad you can contact me by email.
@@ -11,21 +11,21 @@ There's two files in forder "scripts". First - LG.js describes our module for mu
 
 Parameters should look like:
 
-{
-        host: 'http://192.168.1.100', //your tv ip
-        port: '8080', //port. leave it 8080
-        pairKey: '985245'
+{<br>
+        host: 'http://192.168.1.100', //your tv ip<br>
+        port: '8080', //port. leave it 8080<br>
+        pairKey: '985245'<br>
 }
 
 Pair key shows on your tv screen after 'your instance'.sendShowKeyRequest() or you can discover this key by installing native lg application and pairing. 
 
 Before sending keys to TV you should send 'Hello' request. In startUp function module.sendHelloRequest is called but after tv turn off and then on you must send 'Hello' request again.
 
-Next errors may occurs while sending 'Hello': 
+Next errors may occurs while sending 'Hello': <br>
 
-1) HTTP/1.1 401 Unauthorized - The pairing key value is not valid.
-2) HTTP/1.1 400 Bad Request - The hello request is transmitted in an incorrect format.
-3) HTTP/1.1 500 Internal Server Error - During hello request handling, an internal handling error occurs in a Host.
+1) HTTP/1.1 401 Unauthorized - The pairing key value is not valid.<br>
+2) HTTP/1.1 400 Bad Request - The hello request is transmitted in an incorrect format.<br>
+3) HTTP/1.1 500 Internal Server Error - During hello request handling, an internal handling error occurs in a Host.<br>
 4) HTTP/1.1 503 Service Unavailable - Maximum number of Controllers that a Host can accommodate has been exceeded.
 
 
