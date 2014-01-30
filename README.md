@@ -1,6 +1,12 @@
 Descriptiom
 =============
 
+This is module for control LG over TCP/IP. This is light version - you can send only keys that listed in the end of this description. For additional features like getting channel list, apps list, executong app, text input, touchpad you can contact me by email.
+
+
+Usage
+=============
+
 There's two files in forder "scripts". First - LG.js describes our module for multiple instances. Second - userMain.js shows how to declare module for specific tv. 
 
 Parameters should look like:
