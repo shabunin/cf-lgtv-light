@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gui>
+  <properties>
+    <project>LG tv module</project>
+    <designer>
+    </designer>
+    <size autoposition="scale">
+      <portrait width="480" height="840" />
+      <landscape width="480" height="320" />
+    </size>
+    <autoposition />
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+    <devices>
+      <device name="iPad Dmitriy">69E32DB061C09965437E713E269B7FB8</device>
+      <device name="Huawei U8860">1926AD9623473CFEE8D0EAE760CDB331</device>
+      <device name="iPad tommy">298F02C2C219D67FB45A344BD524A85D</device>
+      <device name="Sony LT25i">15DCDE3D3B63FA8BE1DBE3E52848A155</device>
+    </devices>
+  </properties>
+  <systems>
+    <system name="Self" ip="127.0.0.1" port="10207" protocol="tcp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0">
+      <cmd name="setDimmer" js="setDimmer(data)" jsSendsCommand="True">[sliderval]</cmd>
+      <cmd name="getDimmer" js="getDimmer()" jsSendsCommand="False" />
+    </system>
+    <system name="LG" ip="192.168.1.50" port="8080" protocol="http" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0">
+      <cmd name="test">test</cmd>
+    </system>
+  </systems>
+  <themes>
+    <theme type="background" name=".portrait"><![CDATA[ background-image: url(bg_portrait.png); background-repeat: no-repeat;]]></theme>
+    <theme type="gauge" name=".slider_base_horizontal_300[state='0']"><![CDATA[ background-image: url(PNG\sliders\sliders_base_horizontal_300.png);]]></theme>
+    <theme type="gauge" name=".slider_base_horizontal_300[state='1']"><![CDATA[]]></theme>
+    <theme type="gauge" name=".gauge_horizontal_white_100[state='0']"><![CDATA[ background-image: url(PNG\gauges\gauge_horizontal_base_100.png);]]></theme>
+    <theme type="gauge" name=".gauge_horizontal_white_100[state='1']"><![CDATA[ background-image: url(PNG\gauges\gauge_horizontal_white_100.png);]]></theme>
+    <theme type="gauge" name=".slider_horizontal[state='0']"><![CDATA[]]></theme>
+    <theme type="gauge" name=".slider_horizontal[state='1']"><![CDATA[ background-image: url(slider_horizontal_on.png);]]></theme>
+    <theme type="button" name=".btn_single[state='0']"><![CDATA[padding: 0px 20px 0px 20px; -webkit-border-image: url(btn_single_off.png) 0 20 0 20; text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_single[state='1']"><![CDATA[padding: 0px 20px 0px 20px; -webkit-border-image: url(btn_single_on.png) 0 20 0 20; text-shadow: rgba(53,202,244,1) 0px 0px 3px; color: #9DCEFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list[state='0']"><![CDATA[padding: 0px 0px 0px 42px; background-image: url(btn_list_off.png); color: Black; font-size: 24px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_list[state='1']"><![CDATA[padding: 0px 0px 0px 42px; background-image: url(btn_list_on.png); color: White; font-size: 24px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: left; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".button_white_80_92[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(PNG\buttons\button_white_80_92.png); color: White; font-size: 12px; font-name: 'ArialMT'; font-family: 'Arial'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".button_white_80_92[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(PNG\buttons\button_active_80_92.png); color: White; font-size: 12px; font-name: 'ArialMT'; font-family: 'Arial'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".button_green_224_207[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(PNG\buttons\button_green_224_207.png); color: White; font-size: 12px; font-name: 'ArialMT'; font-family: 'Arial'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".button_green_224_207[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(PNG\buttons\button_active_224_207.png); color: White; font-size: 12px; font-name: 'ArialMT'; font-family: 'Arial'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="input" name=".cfblue2_white"><![CDATA[ border-width: 0px; color: White; font-size: 18px; font-family: 'Arial'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="input" name=".cfblue2_black"><![CDATA[ border-width: 0px; color: Black; font-size: 12px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".btn_single_1[state='0']"><![CDATA[padding: 0px 20px 0px 20px; -webkit-border-image: url(btn_single_off.png) 0 20 0 20; text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_single_1[state='1']"><![CDATA[padding: 0px 20px 0px 20px; -webkit-border-image: url(btn_single_on.png) 0 20 0 20; text-shadow: rgba(53,202,244,1) 0px 0px 3px; color: #9DCEFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="scripts/LG.js" />
+    <script name="scripts/userMain.js" />
+  </scripts>
+  <page name="Startup" j="0" transition="" subtype="" time="0" ease="">
+    <portrait t="portrait">
+      <btn j="0" x="12" y="18" w="177" h="85" t="btn_single" flip="None" sim="1" l="0" s="1" js="TV.LG1.sendShowKeyRequest();">
+        <inactive s="0">ShowKey</inactive>
+        <active s="0">ShowKey</active>
+      </btn>
+      <btn j="0" x="279" y="15" w="177" h="85" t="btn_single" flip="None" sim="1" l="0" s="1" js="TV.LG1.sendKey('VolumeUp')">
+        <inactive s="0">CMD1</inactive>
+        <active s="0">CMD1</active>
+      </btn>
+    </portrait>
+    <landscape />
+  </page>
+  <subpage name="listTemplate" w="442" h="96" clip="1">
+    <btn j="1" x="101" y="0" w="341" h="96" t="btn_list" flip="None" sim="1" l="0" s="1" js="LGTV.selectItem(list, listIndex, join)">
+      <inactive s="1">List</inactive>
+      <active s="1">List</active>
+    </btn>
+    <img x="0" y="0" w="100" h="96" j="2" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" />
+  </subpage>
+</gui>
